@@ -1,0 +1,10 @@
+consumer/node_modules/
+node-red/node_modules/
+users/node_modules/
+consumer/dist/
+users/dist/
+node_modules
+.env
+.env.example
+.env.local
+.env.staging

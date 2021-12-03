@@ -1,0 +1,32 @@
+{
+	"name": "users",
+	"version": "1.0.0",
+	"description": "",
+	"main": "user.js",
+	"scripts": {
+		"build": "babel src --out-dir dist  --copy-files",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npm run build && node dist/user.js",
+		"dev": "nodemon --exec babel-node src/user.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"amqplib": "^0.8.0",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"got": "^11.8.3",
+		"helmet": "^4.4.1",
+		"mongoose": "^5.11.15",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.16.0",
+		"@babel/core": "^7.16.0",
+		"@babel/node": "^7.16.0",
+		"@babel/preset-env": "^7.16.4",
+		"nodemon": "^2.0.7"
+	}
+}

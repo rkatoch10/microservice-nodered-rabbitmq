@@ -1,0 +1,18 @@
+{
+	"name": "microservices",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "concurrently \"cd consumer && npm start\" \"cd users && npm start\" \"cd node-red && node server\"",
+		"dev": "concurrently \"cd consumer && npm run dev\" \"cd users && npm run dev\" \"cd node-red && node server\"",
+		"install": "concurrently \"cd consumer && npm i\" \"cd users && npm i\" \"cd node-red && npm i\"",
+		"postinstall": "mongo index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.21.1",
+		"concurrently": "^6.0.0"
+	}
+}
