@@ -7,13 +7,14 @@
 		"build": "babel src --out-dir dist  --copy-files",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "npm run build && node dist/user.js",
-		"dev": "nodemon --exec babel-node src/user.js"
+		"dev": "nodemon --exec ./node_modules/.bin/babel-node src/user.js"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
 		"amqplib": "^0.8.0",
+		"babel-node": "0.0.1-security",
 		"cors": "^2.8.5",
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",

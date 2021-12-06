@@ -9,7 +9,7 @@ const UserInput = model('userinputs')
 export const create = async (req, res) => {
 	try {
 		const { text } = req.body
-		const encryptedText = await encryptText(text)
+		const encryptedText = await encryptText(text) // node-red
 		const userInput = new UserInput({ text, encryptedText })
 		const savedUserInput = await userInput.save()
 		await createConsumerMessage({ id: userInput._id, encryptedText })
