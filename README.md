@@ -22,7 +22,6 @@ Install the dependencies and devDependencies and start the server.
 After you `cd` to root folder, do following: 
 
 ```sh
-cd dillinger
 npm i
 npm run dev
 ```
